@@ -1,0 +1,32 @@
+{
+  "name": "package-jason",
+  "version": "0.0.1",
+  "description": "Scan NPM packages to see the tree of all dependencies",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "author": "Michael Rambeau",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.5.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-babel": "^5.2.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-promise": "^4.0.1",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.2"
+  },
+  "dependencies": {
+    "debug": "^4.0.1",
+    "ora": "^3.0.0",
+    "p-map": "^2.0.0",
+    "package-json": "^5.0.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "redux",
+  "version": "4.0.0",
+  "children": [
+    {
+      "name": "loose-envify",
+      "version": "1.4.0",
+      "children": [
+        {
+          "name": "js-tokens",
+          "version": "4.0.0"
+        }
+      ]
+    },
+    {
+      "name": "symbol-observable",
+      "version": "1.2.0"
+    }
+  ]
+}
