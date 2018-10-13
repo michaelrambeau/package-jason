@@ -12,6 +12,12 @@
   },
   "author": "Michael Rambeau",
   "license": "MIT",
+  "keywords": [
+    "npm",
+    "package.json",
+    "dependencies",
+    "tree"
+  ],
   "devDependencies": {
     "babel-eslint": "^9.0.0",
     "eslint": "^5.5.0",
