@@ -1,8 +1,8 @@
-# Package Jason
+# Package Jason: your new friend who knows about `package.json`
 
-Do you want to see the package dependency tree? Ask Jason, he knows everything about the `package.json` files!
+Do you want to see the deep tree of dependencies of any package? Ask Jason, he knows everything about the `package.json` files!
 
-_Package Jason_ is a tool that scan recursively all dependencies of a given package and generate a tree that shows all nested dependencies.
+_Package Jason_ is a tool that scans recursively all dependencies of a given package and generates a tree that shows all nested dependencies.
 
 For example, let's scan `react` package:
 
@@ -11,10 +11,10 @@ const packageJason = require("package-jason");
 const result = await packageJason("react");
 ```
 
-We will get a JSON `tree` and meta data about the packages scanned:
+We will get a JSON `tree` and `meta` data about the packages scanned:
 
-- total: total number of packages found during the scanning process
-- count: number of unique packages found (because the same package can be included by several sub-dependencies)
+- total: total number of packages found during the scanning process (10 packages)
+- count: number of unique packages found, because the same package can be included by several sub-dependencies (7 packages)
 
 ```json
 {
@@ -77,14 +77,22 @@ We will get a JSON `tree` and meta data about the packages scanned:
 
 ## Compatibility
 
-To be used with Node.js 10+.
+_Package Jason_ runs on Node.js 10+.
 
 This is a package for the Node.js only, not for the browser.
 
 ## Testing
 
+Test suite
+
 ```
 npm test
+```
+
+Testing any package from the command line:
+
+```
+node cli express
 ```
 
 ## Credits
